@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
+  "env": {
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "15.5"
+    }
+  },
+  "overrides": [
+    {
+      "files": "presentation/src/**/*",
+      "env": {
+        "browser": true
+      }
+    },
+    {
+      "files": "examples/**/*.js",
+      "env": {
+        "node": true
+      }
+    },
+    {
+      "files": "examples/**/__tests__/**/*.js",
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "eslint-watch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "jest": "^23.6.0",
+    "jest-runner-eslint": "jest-community/jest-runner-eslint#watch-plugin"
+  }
+}

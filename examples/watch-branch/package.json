@@ -1,0 +1,12 @@
+{
+  "name": "watch-branch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "git-root-dir":"^1.0.2",
+    "jest": "^23.6.0",
+    "nodegit": "^0.22.2",
+    "prompts":"^1.1.1"
+  }
+}
