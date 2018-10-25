@@ -34,6 +34,9 @@ import jasmineDownloadStatsImage from './static/jasmine.png';
 import tapeDownloadStatsImage from './static/tape.png';
 import avaDownloadStatsImage from './static/ava.png';
 
+import jestDownloadStatsNumbers from './static/jest-downloads.png';
+import mochaDownloadStatsNumbers from './static/mocha-downloads.png';
+
 import magicGif from './static/magic.gif';
 
 const theme = createTheme(
@@ -89,6 +92,8 @@ preload([
   jasmineDownloadStatsImage,
   tapeDownloadStatsImage,
   avaDownloadStatsImage,
+  jestDownloadStatsNumbers,
+  mochaDownloadStatsNumbers,
   magicGif,
 ]);
 
@@ -161,6 +166,7 @@ const Presentation = () => (
         <ul>
           <li>First release on npm, at least</li>
           <li>800 contributors on September 23rd</li>
+          <li>829 contributors on October 25th</li>
         </ul>
       </Notes>
       <Heading>What is Jest?</Heading>
@@ -171,41 +177,55 @@ const Presentation = () => (
         <ListItem>
           Blazing fast <Emoji emoji="🔥" label="blazing fast" />
         </ListItem>
-        <ListItem>800 different contributors</ListItem>
+        <ListItem>800+ different contributors</ListItem>
       </List>
     </Slide>
     <Slide>
-      <Notes>Charts are from January 1st 2015 to September 1st 2018</Notes>
+      <Notes>Charts are from January 1st 2015 to October 1st 2018</Notes>
       <Heading>Mocha</Heading>
-      <Link href="https://npm-stat.com/charts.html?package=mocha&from=2015-01-01&to=2018-09-01">
+      <Link href="https://npm-stat.com/charts.html?package=mocha&from=2015-01-01&to=2018-10-01">
         <Image src={mochaDownloadStatsImage} />
       </Link>
     </Slide>
     {/*
     <Slide>
       <Heading>Jasmine</Heading>
-      <Link href="https://npm-stat.com/charts.html?package=jasmine-core&from=2015-01-01&to=2018-09-01">
+      <Link href="https://npm-stat.com/charts.html?package=jasmine-core&from=2015-01-01&to=2018-10-01">
         <Image src={jasmineDownloadStatsImage} />
       </Link>
     </Slide>
     <Slide>
       <Heading>Tape</Heading>
-      <Link href="https://npm-stat.com/charts.html?package=tape&from=2015-01-01&to=2018-09-01">
+      <Link href="https://npm-stat.com/charts.html?package=tape&from=2015-01-01&to=2018-10-01">
         <Image src={tapeDownloadStatsImage} />
       </Link>
     </Slide>
     <Slide>
       <Heading>Ava</Heading>
-      <Link href="https://npm-stat.com/charts.html?package=ava&from=2015-01-01&to=2018-09-01">
+      <Link href="https://npm-stat.com/charts.html?package=ava&from=2015-01-01&to=2018-10-01">
         <Image src={avaDownloadStatsImage} />
       </Link>
     </Slide>
     */}
     <Slide>
       <Heading>Jest</Heading>
-      <Link href="https://npm-stat.com/charts.html?package=jest&from=2015-01-01&to=2018-09-01">
+      <Link href="https://npm-stat.com/charts.html?package=jest&from=2015-01-01&to=2018-10-01">
         <Image src={jestDownloadStatsImage} />
       </Link>
+    </Slide>
+    <Slide>
+      <Notes>
+        <ul>
+          <li>1 month ago I said end of year</li>
+        </ul>
+      </Notes>
+      <Heading>The numbers</Heading>
+      <div style={{ width: '50%', display: 'inline-block' }}>
+        <Image src={jestDownloadStatsNumbers} />
+      </div>
+      <div style={{ width: '50%', display: 'inline-block' }}>
+        <Image src={mochaDownloadStatsNumbers} />
+      </div>
     </Slide>
     <Slide>
       <Notes>
@@ -511,7 +531,7 @@ const Presentation = () => (
       <Notes>
         <span>Watch mode fix eslint</span>
       </Notes>
-      <CenterTwitterEmbed id="1005125357844905984" />
+      <CenterTwitterEmbed id="1054060129836920832" />
     </Slide>
     <Slide transition={['fade']}>
       <Heading>Summary</Heading>
