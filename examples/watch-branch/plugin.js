@@ -1,6 +1,6 @@
 const prompts = require('prompts');
-const gitRoot = require('git-root-dir');
-const NodeGit = require('nodegit');
+const { findRepos } = require('jest-changed-files');
+const simpleGit = require('simple-git/promise');
 
 class JestWatchBranchPlugin {
   getUsageInfo() {
@@ -28,25 +28,31 @@ class JestWatchBranchPlugin {
   }
 
   async _getBranches(rootDir) {
-    const root = await gitRoot(rootDir);
+    // findRepos return a set of git repos and a set of hg repos.
+    // It doesn't really make sense to use this plugin across different
+    // repositories, so we assume there's a single repository
+    // for `rootDir` by just getting the first one
+    const { git: roots } = await findRepos([rootDir]);
+
+    const [root] = Array.from(roots);
 
     if (!root) {
       throw new Error('Unable to find git root');
     }
 
-    const repo = await NodeGit.Repository.open(root);
+    const repo = simpleGit(root);
 
-    const [references, currentBranchRef] = await Promise.all([
-      repo.getReferences(NodeGit.Reference.TYPE.LISTALL),
-      repo.getCurrentBranch(),
-    ]);
+    const { branches } = await repo.branch();
 
-    const currentBranch = currentBranchRef.shorthand();
-
-    return references.map(r => r.shorthand()).map(branch => ({
-      value: branch,
-      title: currentBranch === branch ? `${branch} (current branch)` : branch,
-    }));
+    return Object.values(branches)
+      .map(branch => ({
+        ...branch,
+        name: branch.name.replace(/^remotes\//, ''),
+      }))
+      .map(({ current, name }) => ({
+        value: name,
+        title: current ? `${name} (current branch)` : name,
+      }));
   }
 }
 
