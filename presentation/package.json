@@ -6,8 +6,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-scripts": "^2.0.5",
     "react-tweet-embed": "^1.1.1",
-    "react-scripts": "^1.1.5",
     "spectacle": "^4.4.1"
   },
   "scripts": {
@@ -15,5 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    "chrome 70"
+  ]
 }
