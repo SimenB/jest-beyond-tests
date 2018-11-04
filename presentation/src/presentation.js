@@ -183,33 +183,33 @@ const Presentation = () => (
     <Slide>
       <Notes>Charts are from January 1st 2015 to October 1st 2018</Notes>
       <Heading>Mocha</Heading>
-      <Link href="https://npm-stat.com/charts.html?package=mocha&from=2015-01-01&to=2018-10-01">
+      <Link href="https://npm-stat.com/charts.html?package=mocha&from=2015-01-01&to=2018-11-01">
         <Image src={mochaDownloadStatsImage} />
       </Link>
     </Slide>
     {/*
     <Slide>
       <Heading>Jasmine</Heading>
-      <Link href="https://npm-stat.com/charts.html?package=jasmine-core&from=2015-01-01&to=2018-10-01">
+      <Link href="https://npm-stat.com/charts.html?package=jasmine-core&from=2015-01-01&to=2018-11-01">
         <Image src={jasmineDownloadStatsImage} />
       </Link>
     </Slide>
     <Slide>
       <Heading>Tape</Heading>
-      <Link href="https://npm-stat.com/charts.html?package=tape&from=2015-01-01&to=2018-10-01">
+      <Link href="https://npm-stat.com/charts.html?package=tape&from=2015-01-01&to=2018-11-01">
         <Image src={tapeDownloadStatsImage} />
       </Link>
     </Slide>
     <Slide>
       <Heading>Ava</Heading>
-      <Link href="https://npm-stat.com/charts.html?package=ava&from=2015-01-01&to=2018-10-01">
+      <Link href="https://npm-stat.com/charts.html?package=ava&from=2015-01-01&to=2018-11-01">
         <Image src={avaDownloadStatsImage} />
       </Link>
     </Slide>
     */}
     <Slide>
       <Heading>Jest</Heading>
-      <Link href="https://npm-stat.com/charts.html?package=jest&from=2015-01-01&to=2018-10-01">
+      <Link href="https://npm-stat.com/charts.html?package=jest&from=2015-01-01&to=2018-11-01">
         <Image src={jestDownloadStatsImage} />
       </Link>
     </Slide>
