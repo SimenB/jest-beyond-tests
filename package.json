@@ -3,11 +3,11 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "lint": "eslint . --ext js,jsx"
+    "lint": "eslint . --ext js,jsx,ts,tsx"
   },
   "devDependencies": {
     "eslint": "5.6.0",
-    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
     "prettier": "^1.14.2"

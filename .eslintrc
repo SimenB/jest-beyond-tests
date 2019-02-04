@@ -25,13 +25,13 @@
       }
     },
     {
-      "files": "examples/**/*.js",
+      "files": "examples/**/*.[j,t]s",
       "env": {
         "node": true
       }
     },
     {
-      "files": "examples/**/__tests__/**/*.js",
+      "files": "examples/**/__tests__/**/*.[j,t]s",
       "env": {
         "jest": true
       }

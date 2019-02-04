@@ -5,7 +5,7 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^4.0.0",
-    "jest": "^23.6.0",
+    "jest": "^24.0.0",
     "jest-runner-eslint": "jest-community/jest-runner-eslint#watch-plugin"
   }
 }

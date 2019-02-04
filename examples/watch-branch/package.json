@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^23.6.0",
-    "jest-changed-files": "^23.4.2",
-    "prompts":"^1.1.1",
+    "jest": "^24.0.0",
+    "jest-changed-files": "^24.0.0",
+    "prompts": "^2.0.1",
     "simple-git": "^1.105.0"
   }
 }
