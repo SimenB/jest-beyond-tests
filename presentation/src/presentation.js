@@ -33,9 +33,7 @@ import mochaDownloadStatsImage from './static/mocha.png';
 import jasmineDownloadStatsImage from './static/jasmine.png';
 import tapeDownloadStatsImage from './static/tape.png';
 import avaDownloadStatsImage from './static/ava.png';
-
-import jestDownloadStatsNumbers from './static/jest-downloads.png';
-import mochaDownloadStatsNumbers from './static/mocha-downloads.png';
+import february2019StatsImages from './static/downloads-february-2019.png';
 
 import magicGif from './static/magic.gif';
 
@@ -92,8 +90,7 @@ preload([
   jasmineDownloadStatsImage,
   tapeDownloadStatsImage,
   avaDownloadStatsImage,
-  jestDownloadStatsNumbers,
-  mochaDownloadStatsNumbers,
+  february2019StatsImages,
   magicGif,
 ]);
 
@@ -216,16 +213,13 @@ const Presentation = () => (
     <Slide>
       <Notes>
         <ul>
-          <li>1 month ago I said end of year</li>
+          <li>September 2018 I said end of the year</li>
         </ul>
       </Notes>
       <Heading>The numbers</Heading>
-      <div style={{ width: '50%', display: 'inline-block' }}>
-        <Image src={jestDownloadStatsNumbers} />
-      </div>
-      <div style={{ width: '50%', display: 'inline-block' }}>
-        <Image src={mochaDownloadStatsNumbers} />
-      </div>
+      <Link href="https://www.npmtrends.com/jest-vs-mocha-vs-jasmine-vs-ava">
+        <Image src={february2019StatsImages} />
+      </Link>
     </Slide>
     <Slide>
       <Notes>
